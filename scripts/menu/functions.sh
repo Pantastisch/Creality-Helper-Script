@@ -204,12 +204,12 @@ feature_option() {
   menu_number=$1
   menu_text=$2
   is_installed=$3
-  max_length=50
+  max_length=55
   padding=$((max_length - ${#menu_text}))
   
   if [ "$is_installed" = "true" ]; then
-    printf " │   ${yellow}${menu_number}${white}) ${white}${menu_text}%-${padding}s${green}[INSTALLED]${white}│\n" ''
+    printf " │   ${yellow}${menu_number}${white}) ${white}${menu_text}%-${padding}s${green}✓${white}  │\n" ''
   else
-    printf " │   ${yellow}${menu_number}${white}) ${white}${menu_text}%-${padding}s${cyan}[NOT INSTALLED]${white}│\n" ''
+    printf " │   ${yellow}${menu_number}${white}) ${white}${menu_text}%-${padding}s${darkred}✗${white}  │\n" ''
   fi
 }
