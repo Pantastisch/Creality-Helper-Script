@@ -1,6 +1,7 @@
 # Command Line Interface Usage
 
-The Creality Helper Script now supports both interactive menu mode and command-line interface (CLI) mode.
+The Creality Helper Script now supports both interactive menu mode and
+command-line interface (CLI) mode.
 
 ## Interactive Mode
 
@@ -29,6 +30,7 @@ helper
 ```
 
 Examples:
+
 ```bash
 ./helper.sh install moonraker
 ./helper.sh install fluidd
@@ -45,6 +47,7 @@ Examples:
 ```
 
 Examples:
+
 ```bash
 ./helper.sh remove moonraker
 ./helper.sh remove fluidd
@@ -54,16 +57,19 @@ Examples:
 #### Check Status
 
 Check status of a specific feature:
+
 ```bash
 ./helper.sh status <feature>
 ```
 
 Check status of all features:
+
 ```bash
 ./helper.sh status
 ```
 
 Examples:
+
 ```bash
 ./helper.sh status moonraker
 ./helper.sh status fluidd
@@ -79,15 +85,18 @@ Examples:
 ### Available Features
 
 #### Essentials
+
 - `moonraker` - Moonraker and Nginx
 - `fluidd` - Fluidd Web Interface
 - `mainsail` - Mainsail Web Interface
 
 #### Utilities
+
 - `entware` - Entware Package Manager
 - `shell-command` (or `gcode-shell-command`) - Klipper Gcode Shell Command
 
 #### Improvements
+
 - `kamp` - Klipper Adaptive Meshing & Purging
 - `buzzer` - Buzzer Support
 - `nozzle-cleaning` - Nozzle Cleaning Fan Control
@@ -100,11 +109,13 @@ Examples:
 - `backup` (or `git-backup`) - Git Backup
 
 #### Camera
+
 - `timelapse` - Moonraker Timelapse
 - `camera` (or `camera-settings`) - Camera Settings Control
 - `usb-camera` - USB Camera Support
 
 #### Remote Access
+
 - `octoeverywhere` - OctoEverywhere
 - `obico` (or `moonraker-obico`) - Moonraker Obico
 - `guppyflo` - GuppyFLO
@@ -113,6 +124,7 @@ Examples:
 - `simplyprint` - SimplyPrint
 
 #### Other
+
 - `guppy-screen` (or `guppy`) - Guppy Screen (K1 only)
 
 ### Feature Aliases
