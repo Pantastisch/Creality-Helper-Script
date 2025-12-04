@@ -260,6 +260,27 @@ if [ $# -gt 0 ]; then
         echo "Run '$0 list' to see available features"
         exit 1
       fi
+      
+      # Check installation status
+      status=$(get_feature_status "$2")
+      if [ "$status" = "unknown" ]; then
+        echo "Error: Unknown feature '$2'"
+        echo "Run '$0 list' to see available features"
+        exit 1
+      fi
+      
+      # Prevent installing already installed features
+      if [ "$1" = "install" ] && [ "$status" = "installed" ]; then
+        echo "Feature '$2' is already installed."
+        exit 0
+      fi
+      
+      # Prevent removing not installed features
+      if [ "$1" = "remove" ] && [ "$status" = "not installed" ]; then
+        echo "Feature '$2' is not installed."
+        exit 0
+      fi
+      
       clear
       execute_feature_command "$1" "$2"
       echo
