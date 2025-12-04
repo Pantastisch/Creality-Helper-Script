@@ -199,3 +199,17 @@ function restart_klipper() {
 function disabled_feature() {
   error_msg "Due to some compatibility issues, this feature is temporarily disabled!"
 }
+
+feature_option() {
+  menu_number=$1
+  menu_text=$2
+  is_installed=$3
+  max_length=50
+  padding=$((max_length - ${#menu_text}))
+  
+  if [ "$is_installed" = "true" ]; then
+    printf " │   ${yellow}${menu_number}${white}) ${white}${menu_text}%-${padding}s${green}[INSTALLED]${white}│\n" ''
+  else
+    printf " │   ${yellow}${menu_number}${white}) ${white}${menu_text}%-${padding}s${cyan}[NOT INSTALLED]${white}│\n" ''
+  fi
+}

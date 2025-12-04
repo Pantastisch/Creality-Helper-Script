@@ -63,13 +63,12 @@ function main_menu_ui() {
   title "/!\\ ONLY USE THIS SCRIPT WITH LATEST FIRMWARE VERSION /!\\" "${darkred}"
   inner_line
   hr
-  main_menu_option '1' '[Install]' 'Menu'
-  main_menu_option '2' '[Remove]' 'Menu'
-  main_menu_option '3' '[Customize]' 'Menu'
-  main_menu_option '4' '[Backup & Restore]' 'Menu'
-  main_menu_option '5' '[Tools]' 'Menu'
-  main_menu_option '6' '[Information]' 'Menu'
-  main_menu_option '7' '[System]' 'Menu'
+  main_menu_option '1' '[Manage]' 'Features (Install/Remove/Status)'
+  main_menu_option '2' '[Customize]' 'Menu'
+  main_menu_option '3' '[Backup & Restore]' 'Menu'
+  main_menu_option '4' '[Tools]' 'Menu'
+  main_menu_option '5' '[Information]' 'Menu'
+  main_menu_option '6' '[System]' 'Menu'
   hr
   inner_line
   hr
@@ -88,31 +87,18 @@ function main_menu() {
     case "${main_menu_opt}" in
       1) clear
          if [ "$model" = "K1" ]; then
-           install_menu_k1
+           manage_menu_k1
          elif [ "$model" = "3V3" ]; then
-           install_menu_3v3
+           manage_menu_3v3
          elif [ "$model" = "3KE" ]; then
-           install_menu_3ke
+           manage_menu_3ke
          elif [ "$model" = "E5M" ]; then
-           install_menu_e5m
+           manage_menu_e5m
          else
-           install_menu_10se
+           manage_menu_10se
          fi
          break;;
       2) clear
-         if [ "$model" = "K1" ]; then
-           remove_menu_k1
-         elif [ "$model" = "3V3" ]; then
-           remove_menu_3v3
-         elif [ "$model" = "3KE" ]; then
-           remove_menu_3ke
-         elif [ "$model" = "E5M" ]; then
-           remove_menu_e5m
-         else
-           remove_menu_10se
-         fi
-         break;;
-      3) clear
          if [ "$model" = "K1" ]; then
            customize_menu_k1
          elif [ "$model" = "3V3" ]; then
@@ -125,10 +111,10 @@ function main_menu() {
            customize_menu_10se
          fi
          break;;
-      4) clear
+      3) clear
          backup_restore_menu
          break;;
-      5) clear
+      4) clear
          if [ "$model" = "K1" ]; then
            tools_menu_k1
          elif [ "$model" = "3V3" ]; then
@@ -141,7 +127,7 @@ function main_menu() {
            tools_menu_10se
          fi
          main_ui;;
-      6) clear
+      5) clear
          if [ "$model" = "K1" ]; then
            info_menu_k1
          elif [ "$model" = "3V3" ]; then
@@ -154,7 +140,7 @@ function main_menu() {
            info_menu_10se
          fi
          break;;
-      7) clear
+      6) clear
          system_menu
          break;;
       Q|q)
