@@ -67,8 +67,7 @@ function main_menu_ui() {
   main_menu_option '2' '[Customize]' 'Menu'
   main_menu_option '3' '[Backup & Restore]' 'Menu'
   main_menu_option '4' '[Tools]' 'Menu'
-  main_menu_option '5' '[Information]' 'Menu'
-  main_menu_option '6' '[System]' 'Menu'
+  main_menu_option '5' '[System]' 'Menu'
   hr
   inner_line
   hr
@@ -128,19 +127,6 @@ function main_menu() {
          fi
          main_ui;;
       5) clear
-         if [ "$model" = "K1" ]; then
-           info_menu_k1
-         elif [ "$model" = "3V3" ]; then
-           info_menu_3v3
-         elif [ "$model" = "3KE" ]; then
-           info_menu_3ke
-         elif [ "$model" = "E5M" ]; then
-           info_menu_e5m
-         else
-           info_menu_10se
-         fi
-         break;;
-      6) clear
          system_menu
          break;;
       Q|q)
