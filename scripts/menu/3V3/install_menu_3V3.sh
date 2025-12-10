@@ -2,7 +2,7 @@
 
 set -e
 
-function install_menu_ui_3v3() {
+install_menu_ui_3v3() {
   top_line
   title '[ INSTALL MENU ]' "${yellow}"
   inner_line
@@ -47,7 +47,7 @@ function install_menu_ui_3v3() {
   bottom_line
 }
 
-function install_menu_3v3() {
+install_menu_3v3() {
   clear
   install_menu_ui_3v3
   local install_menu_opt

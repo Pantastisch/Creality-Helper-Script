@@ -2,7 +2,7 @@
 
 set -e
 
-function prevent_updating_klipper_files_message(){
+prevent_updating_klipper_files_message(){
   top_line
   title 'Prevent updating Klipper configuration files' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function prevent_updating_klipper_files_message(){
   bottom_line
 }
 
-function allow_updating_klipper_files_message(){
+allow_updating_klipper_files_message(){
   top_line
   title 'Allow updating Klipper configuration files' "${yellow}"
   inner_line
@@ -24,7 +24,7 @@ function allow_updating_klipper_files_message(){
   bottom_line
 }
 
-function printing_gcode_from_folder_message(){
+printing_gcode_from_folder_message(){
   top_line
   title 'Fix printing Gcode files from folder' "${yellow}"
   inner_line
@@ -36,7 +36,7 @@ function printing_gcode_from_folder_message(){
   bottom_line
 }
 
-function enable_camera_settings_message(){
+enable_camera_settings_message(){
   top_line
   title 'Enable camera settings in Moonraker' "${yellow}"
   inner_line
@@ -47,7 +47,7 @@ function enable_camera_settings_message(){
   bottom_line
 }
 
-function disable_camera_settings_message(){
+disable_camera_settings_message(){
   top_line
   title 'Disable camera settings in Moonraker' "${yellow}"
   inner_line
@@ -58,7 +58,7 @@ function disable_camera_settings_message(){
   bottom_line
 }
 
-function restore_previous_firmware_message(){
+restore_previous_firmware_message(){
   top_line
   title 'Restore a previous firmware' "${yellow}"
   inner_line
@@ -74,7 +74,7 @@ function restore_previous_firmware_message(){
   bottom_line
 }
 
-function reset_factory_settings_message(){
+reset_factory_settings_message(){
   top_line
   title 'Reset factory settings' "${yellow}"
   inner_line
@@ -90,7 +90,7 @@ function reset_factory_settings_message(){
   bottom_line
 }
 
-function prevent_updating_klipper_files(){
+prevent_updating_klipper_files(){
   prevent_updating_klipper_files_message
   local yn
   while true; do
@@ -117,7 +117,7 @@ function prevent_updating_klipper_files(){
   done
 }
 
-function allow_updating_klipper_files(){
+allow_updating_klipper_files(){
   allow_updating_klipper_files_message
   local yn
   while true; do
@@ -141,7 +141,7 @@ function allow_updating_klipper_files(){
   done
 }
 
-function printing_gcode_from_folder(){
+printing_gcode_from_folder(){
   printing_gcode_from_folder_message
   local yn
   while true; do
@@ -174,7 +174,7 @@ function printing_gcode_from_folder(){
   done
 }
 
-function enable_camera_settings(){
+enable_camera_settings(){
   enable_camera_settings_message
   local yn
   while true; do
@@ -211,7 +211,7 @@ function enable_camera_settings(){
   done
 }
 
-function disable_camera_settings(){
+disable_camera_settings(){
   disable_camera_settings_message
   local yn
   while true; do
@@ -239,7 +239,7 @@ function disable_camera_settings(){
   done
 }
 
-function restart_nginx_action(){
+restart_nginx_action(){
   echo
   local yn
   while true; do
@@ -260,7 +260,7 @@ function restart_nginx_action(){
   done
 }
 
-function restart_moonraker_action(){
+restart_moonraker_action(){
   echo
   local yn
   while true; do
@@ -281,7 +281,7 @@ function restart_moonraker_action(){
   done
 }
 
-function restart_klipper_action(){
+restart_klipper_action(){
   echo
   local yn
   while true; do
@@ -301,7 +301,7 @@ function restart_klipper_action(){
   done
 }
 
-function update_entware_packages(){
+update_entware_packages(){
   echo
   local yn
   while true; do
@@ -324,7 +324,7 @@ function update_entware_packages(){
   done
 }
 
-function clear_cache(){
+clear_cache(){
   echo
   local yn
   while true; do
@@ -349,7 +349,7 @@ function clear_cache(){
   done
 }
 
-function clear_logs(){
+clear_logs(){
   echo
   local yn
   while true; do
@@ -376,7 +376,7 @@ function clear_logs(){
   done
 }
 
-function restore_previous_firmware(){
+restore_previous_firmware(){
   restore_previous_firmware_message
   local yn
   while true; do
@@ -403,7 +403,7 @@ function restore_previous_firmware(){
   done
 }
 
-function reset_factory_settings(){
+reset_factory_settings(){
   reset_factory_settings_message
   local yn
   while true; do

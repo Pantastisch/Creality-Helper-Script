@@ -2,7 +2,7 @@
 
 set -e
 
-function fans_control_macros_message(){
+fans_control_macros_message(){
   top_line
   title 'Fans Control Macros' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function fans_control_macros_message(){
   bottom_line
 }
 
-function install_fans_control_macros(){
+install_fans_control_macros(){
   fans_control_macros_message
   local yn
   while true; do
@@ -72,7 +72,7 @@ function install_fans_control_macros(){
   done
 }
 
-function remove_fans_control_macros(){
+remove_fans_control_macros(){
   fans_control_macros_message
   local yn
   while true; do

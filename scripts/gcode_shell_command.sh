@@ -2,7 +2,7 @@
 
 set -e
 
-function gcode_shell_command_message(){
+gcode_shell_command_message(){
   top_line
   title 'Klipper Gcode Shell Command' "${yellow}"
   inner_line
@@ -14,7 +14,7 @@ function gcode_shell_command_message(){
   bottom_line
 }
 
-function install_gcode_shell_command(){
+install_gcode_shell_command(){
   gcode_shell_command_message
   local yn
   while true; do
@@ -37,7 +37,7 @@ function install_gcode_shell_command(){
   done
 }
 
-function remove_gcode_shell_command(){
+remove_gcode_shell_command(){
   gcode_shell_command_message
   local yn
   while true; do

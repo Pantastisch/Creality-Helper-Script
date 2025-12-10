@@ -2,7 +2,7 @@
 
 set -e
 
-function fluidd_message(){
+fluidd_message(){
   top_line
   title 'Fluidd' "${yellow}"
   inner_line
@@ -14,7 +14,7 @@ function fluidd_message(){
   bottom_line
 }
 
-function fluidd_3v3_message(){
+fluidd_3v3_message(){
   top_line
   title 'Fluidd' "${yellow}"
   inner_line
@@ -27,7 +27,7 @@ function fluidd_3v3_message(){
   bottom_line
 }
 
-function install_fluidd(){
+install_fluidd(){
   fluidd_message
   local yn
   while true; do
@@ -70,7 +70,7 @@ function install_fluidd(){
   done
 }
 
-function remove_fluidd(){
+remove_fluidd(){
   fluidd_message
   local yn
   while true; do
@@ -102,7 +102,7 @@ function remove_fluidd(){
   done
 }
 
-function install_fluidd_3v3(){
+install_fluidd_3v3(){
   fluidd_3v3_message
   local yn
   while true; do
@@ -148,7 +148,7 @@ function install_fluidd_3v3(){
   done
 }
 
-function remove_fluidd_3v3(){
+remove_fluidd_3v3(){
   fluidd_3v3_message
   local yn
   while true; do

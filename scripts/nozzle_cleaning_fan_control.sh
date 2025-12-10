@@ -2,7 +2,7 @@
 
 set -e
 
-function nozzle_cleaning_fan_control_message(){
+nozzle_cleaning_fan_control_message(){
   top_line
   title 'Nozzle Cleaning Fan Control' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function nozzle_cleaning_fan_control_message(){
   bottom_line
 }
 
-function install_nozzle_cleaning_fan_control(){
+install_nozzle_cleaning_fan_control(){
   nozzle_cleaning_fan_control_message
   local yn
   while true; do
@@ -51,7 +51,7 @@ function install_nozzle_cleaning_fan_control(){
   done
 }
 
-function remove_nozzle_cleaning_fan_control(){
+remove_nozzle_cleaning_fan_control(){
   nozzle_cleaning_fan_control_message
   local yn
   while true; do

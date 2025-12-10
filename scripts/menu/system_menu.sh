@@ -2,7 +2,7 @@
 
 set -e
 
-function check_fw_version() {
+check_fw_version() {
   file="/usr/data/creality/userdata/config/system_version.json"
   if [ -e "$file" ]; then
     cat "$file" | jq -r '.sys_version'
@@ -11,7 +11,7 @@ function check_fw_version() {
   fi
 }
 
-function check_connection() {
+check_connection() {
   eth0_ip=$(ip -4 addr show eth0 2>/dev/null | grep -o -E '(inet\s)([0-9]+\.){3}[0-9]+' | cut -d ' ' -f 2 | head -n 1)
   wlan0_ip=$(ip -4 addr show wlan0 | grep -o -E '(inet\s)([0-9]+\.){3}[0-9]+' | cut -d ' ' -f 2 | head -n 1)
   if [ -n "$eth0_ip" ]; then
@@ -23,7 +23,7 @@ function check_connection() {
   fi
 }
 
-function format_uptime() {
+format_uptime() {
   local uptime=$1
   local upDays=$((uptime / 60 / 60 / 24))
   local upHours=$((uptime / 60 / 60 % 24))
@@ -46,7 +46,7 @@ function format_uptime() {
   echo "$output"
 }
 
-function system_menu_ui() {
+system_menu_ui() {
   memfree=`cat /proc/meminfo | grep MemFree | awk {'print $2'}`
   memtotal=`cat /proc/meminfo | grep MemTotal | awk {'print $2'}`
   pourcent=$((($memfree * 100)/$memtotal))
@@ -81,7 +81,7 @@ function system_menu_ui() {
   bottom_line
 }
 
-function system_menu() {
+system_menu() {
   clear
   system_menu_ui
   local system_menu_opt

@@ -2,7 +2,7 @@
 
 set -e
 
-function mobileraker_companion_message(){
+mobileraker_companion_message(){
   top_line
   title 'Mobileraker Companion' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function mobileraker_companion_message(){
   bottom_line
 }
 
-function install_mobileraker_companion(){
+install_mobileraker_companion(){
   mobileraker_companion_message
   local yn
   while true; do
@@ -49,7 +49,7 @@ function install_mobileraker_companion(){
   done
 }
 
-function remove_mobileraker_companion(){
+remove_mobileraker_companion(){
   mobileraker_companion_message
   local yn
   while true; do

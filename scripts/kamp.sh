@@ -2,7 +2,7 @@
 
 set -e
 
-function kamp_message(){
+kamp_message(){
   top_line
   title 'Klipper Adaptive Meshing & Purging' "${yellow}"
   inner_line
@@ -16,7 +16,7 @@ function kamp_message(){
   bottom_line
 }
 
-function install_kamp(){
+install_kamp(){
   kamp_message
   local yn
   while true; do
@@ -101,7 +101,7 @@ function install_kamp(){
   done
 }
 
-function remove_kamp(){
+remove_kamp(){
   kamp_message
   local yn
   while true; do

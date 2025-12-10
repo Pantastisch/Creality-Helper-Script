@@ -2,7 +2,7 @@
 
 set -e
 
-function screws_tilt_adjust_message(){
+screws_tilt_adjust_message(){
   top_line
   title 'Screws Tilt Adjust Support' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function screws_tilt_adjust_message(){
   bottom_line
 }
 
-function install_screws_tilt_adjust(){
+install_screws_tilt_adjust(){
   screws_tilt_adjust_message
   local yn
   while true; do
@@ -82,7 +82,7 @@ function install_screws_tilt_adjust(){
   done
 }
 
-function remove_screws_tilt_adjust(){
+remove_screws_tilt_adjust(){
   screws_tilt_adjust_message
   local yn
   while true; do

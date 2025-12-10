@@ -2,7 +2,7 @@
 
 set -e
 
-function moonraker_obico_message(){
+moonraker_obico_message(){
   top_line
   title 'Moonraker Obico' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function moonraker_obico_message(){
   bottom_line
 }
 
-function install_moonraker_obico(){
+install_moonraker_obico(){
   moonraker_obico_message
   local yn
   while true; do
@@ -43,7 +43,7 @@ function install_moonraker_obico(){
   done
 }
 
-function remove_moonraker_obico(){
+remove_moonraker_obico(){
   moonraker_obico_message
   local yn
   while true; do

@@ -2,7 +2,7 @@
 
 set -e
 
-function simplyprint_message(){
+simplyprint_message(){
   top_line
   title 'SimplyPrint' "${yellow}"
   inner_line
@@ -14,7 +14,7 @@ function simplyprint_message(){
   bottom_line
 }
 
-function install_simplyprint(){
+install_simplyprint(){
   simplyprint_message
   local yn
   while true; do
@@ -42,7 +42,7 @@ function install_simplyprint(){
   done
 }
 
-function remove_simplyprint(){
+remove_simplyprint(){
   simplyprint_message
   local yn
   while true; do

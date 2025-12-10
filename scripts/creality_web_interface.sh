@@ -2,7 +2,7 @@
 
 set -e
 
-function remove_creality_web_interface_message(){
+remove_creality_web_interface_message(){
   top_line
   title 'Remove Creality Web Interface' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function remove_creality_web_interface_message(){
   bottom_line
 }
 
-function restore_creality_web_interface_message(){
+restore_creality_web_interface_message(){
   top_line
   title 'Restore Creality Web Interface' "${yellow}"
   inner_line
@@ -23,7 +23,7 @@ function restore_creality_web_interface_message(){
   bottom_line
 }
 
-function remove_creality_web_interface(){
+remove_creality_web_interface(){
   remove_creality_web_interface_message
   local yn
   while true; do
@@ -147,7 +147,7 @@ function remove_creality_web_interface(){
   done
 }
 
-function restore_creality_web_interface(){
+restore_creality_web_interface(){
   restore_creality_web_interface_message
   local yn
   while true; do

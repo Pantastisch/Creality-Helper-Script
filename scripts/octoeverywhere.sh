@@ -2,7 +2,7 @@
 
 set -e
 
-function octoeverywhere_message(){
+octoeverywhere_message(){
   top_line
   title 'OctoEverywhere' "${yellow}"
   inner_line
@@ -14,7 +14,7 @@ function octoeverywhere_message(){
   bottom_line
 }
 
-function install_octoeverywhere(){
+install_octoeverywhere(){
   octoeverywhere_message
   local yn
   while true; do
@@ -43,7 +43,7 @@ function install_octoeverywhere(){
   done
 }
 
-function remove_octoeverywhere(){
+remove_octoeverywhere(){
   octoeverywhere_message
   local yn
   while true; do

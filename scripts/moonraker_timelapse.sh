@@ -2,7 +2,7 @@
 
 set -e
 
-function moonraker_timelapse_message(){
+moonraker_timelapse_message(){
   top_line
   title 'Moonraker Timelapse' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function moonraker_timelapse_message(){
   bottom_line
 }
 
-function install_moonraker_timelapse(){
+install_moonraker_timelapse(){
   moonraker_timelapse_message
   local yn
   while true; do
@@ -57,7 +57,7 @@ function install_moonraker_timelapse(){
   done
 }
 
-function remove_moonraker_timelapse(){
+remove_moonraker_timelapse(){
   moonraker_timelapse_message
   local yn
   while true; do

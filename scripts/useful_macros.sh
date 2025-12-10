@@ -2,7 +2,7 @@
 
 set -e
 
-function useful_macros_message(){
+useful_macros_message(){
   top_line
   title 'Useful Macros' "${yellow}"
   inner_line
@@ -14,7 +14,7 @@ function useful_macros_message(){
   bottom_line
 }
 
-function install_useful_macros(){
+install_useful_macros(){
   useful_macros_message
   local yn
   while true; do
@@ -53,7 +53,7 @@ function install_useful_macros(){
   done
 }
 
-function remove_useful_macros(){
+remove_useful_macros(){
   useful_macros_message
   local yn
   while true; do

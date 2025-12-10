@@ -22,14 +22,14 @@ elif echo "$get_model" | grep -iq "F004"; then
   model="E5M"
 fi
 
-function get_script_version() {
+get_script_version() {
   local version
   cd "${HELPER_SCRIPT_FOLDER}"
   version="$(git describe HEAD --always --tags | sed 's/-.*//')"
   echo "${cyan}${version}${white}"
 }
 
-function version_line() {
+version_line() {
   local content="$1"
   local content_length="${#content}"
   local width=$((75))
@@ -37,7 +37,7 @@ function version_line() {
   printf " │ %*s%s%s\n" $padding_length '' "$content" " │"
 }
 
-function script_title() {
+script_title() {
   local title
   if [ "$model" = "K1" ]; then
     title="K1 SERIES"
@@ -55,7 +55,7 @@ function script_title() {
   echo "${title}"
 }
 
-function main_menu_ui() {
+main_menu_ui() {
   top_line
   title "• HELPER SCRIPT FOR CREALITY $(script_title) •" "${blue}"
   title "Copyright © Cyril Guislain (Guilouz)" "${white}"
@@ -77,7 +77,7 @@ function main_menu_ui() {
   bottom_line
 }
 
-function main_menu() {
+main_menu() {
   clear
   main_menu_ui
   local main_menu_opt
