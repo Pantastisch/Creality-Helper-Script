@@ -2,7 +2,7 @@
 
 set -e
 
-function m600_support_message(){
+m600_support_message(){
   top_line
   title 'M600 Support' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function m600_support_message(){
   bottom_line
 }
 
-function install_m600_support(){
+install_m600_support(){
   m600_support_message
   local yn
   while true; do
@@ -75,7 +75,7 @@ function install_m600_support(){
   done
 }
 
-function remove_m600_support(){
+remove_m600_support(){
   m600_support_message
   local yn
   while true; do

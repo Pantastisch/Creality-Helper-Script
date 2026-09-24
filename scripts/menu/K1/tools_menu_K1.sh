@@ -2,7 +2,7 @@
 
 set -e
 
-function tools_menu_ui_k1() {
+tools_menu_ui_k1() {
   top_line
   title '[ TOOLS MENU ]' "${yellow}"
   inner_line
@@ -36,7 +36,7 @@ function tools_menu_ui_k1() {
   bottom_line
 }
 
-function tools_menu_k1() {
+tools_menu_k1() {
   clear
   tools_menu_ui_k1
   local tools_menu_opt

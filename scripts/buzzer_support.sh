@@ -2,7 +2,7 @@
 
 set -e
 
-function buzzer_support_message(){
+buzzer_support_message(){
   top_line
   title 'Buzzer Support' "${yellow}"
   inner_line
@@ -12,7 +12,7 @@ function buzzer_support_message(){
   bottom_line
 }
 
-function install_buzzer_support(){
+install_buzzer_support(){
   buzzer_support_message
   local yn
   while true; do
@@ -48,7 +48,7 @@ function install_buzzer_support(){
   done
 }
 
-function remove_buzzer_support(){
+remove_buzzer_support(){
   buzzer_support_message
   local yn
   while true; do

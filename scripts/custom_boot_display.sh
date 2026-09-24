@@ -2,7 +2,7 @@
 
 set -e
 
-function install_custom_boot_display_message(){
+install_custom_boot_display_message(){
   top_line
   title 'Install Custom Boot Display' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function install_custom_boot_display_message(){
   bottom_line
 }
 
-function remove_custom_boot_display_message(){
+remove_custom_boot_display_message(){
   top_line
   title 'Remove Custom Boot Display' "${yellow}"
   inner_line
@@ -23,7 +23,7 @@ function remove_custom_boot_display_message(){
   bottom_line
 }
 
-function install_custom_boot_display(){
+install_custom_boot_display(){
   install_custom_boot_display_message
   local yn
   while true; do
@@ -66,7 +66,7 @@ function install_custom_boot_display(){
   done
 }
 
-function remove_custom_boot_display(){
+remove_custom_boot_display(){
   remove_custom_boot_display_message
   local yn
   while true; do

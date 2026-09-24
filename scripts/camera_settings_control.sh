@@ -2,7 +2,7 @@
 
 set -e
 
-function camera_settings_control_message(){
+camera_settings_control_message(){
   top_line
   title 'Camera Settings Control' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function camera_settings_control_message(){
   bottom_line
 }
 
-function install_camera_settings_control(){
+install_camera_settings_control(){
   camera_settings_control_message
   local yn
   while true; do
@@ -52,7 +52,7 @@ function install_camera_settings_control(){
   done
 }
 
-function remove_camera_settings_control(){
+remove_camera_settings_control(){
   camera_settings_control_message
   local yn
   while true; do

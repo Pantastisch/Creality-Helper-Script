@@ -2,7 +2,7 @@
 
 set -e
 
-function usb_camera_message(){
+usb_camera_message(){
   top_line
   title 'USB Camera Support' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function usb_camera_message(){
   bottom_line
 }
 
-function install_usb_camera(){
+install_usb_camera(){
   usb_camera_message
   local yn
   while true; do
@@ -71,7 +71,7 @@ function install_usb_camera(){
   done
 }
 
-function remove_usb_camera(){
+remove_usb_camera(){
   usb_camera_message
   local yn
   while true; do

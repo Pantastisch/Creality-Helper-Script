@@ -2,7 +2,7 @@
 
 set -e
 
-function improved_shapers_message(){
+improved_shapers_message(){
   top_line
   title 'Improved Shapers Calibrations' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function improved_shapers_message(){
   bottom_line
 }
 
-function install_improved_shapers(){
+install_improved_shapers(){
   improved_shapers_message
   local yn
   while true; do
@@ -80,7 +80,7 @@ function install_improved_shapers(){
   done
 }
 
-function remove_improved_shapers(){
+remove_improved_shapers(){
   improved_shapers_message
   local yn
   while true; do

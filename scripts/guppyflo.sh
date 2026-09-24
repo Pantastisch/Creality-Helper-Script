@@ -2,7 +2,7 @@
 
 set -e
 
-function guppyflo_message(){
+guppyflo_message(){
   top_line
   title 'GuppyFLO' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function guppyflo_message(){
   bottom_line
 }
 
-function install_guppyflo(){
+install_guppyflo(){
   guppyflo_message
   local yn
   while true; do
@@ -68,7 +68,7 @@ function install_guppyflo(){
   done
 }
 
-function remove_guppyflo(){
+remove_guppyflo(){
   guppyflo_message
   local yn
   while true; do

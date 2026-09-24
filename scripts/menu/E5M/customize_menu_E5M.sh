@@ -2,7 +2,7 @@
 
 set -e
 
-function customize_menu_ui_e5m() {
+customize_menu_ui_e5m() {
   top_line
   title '[ CUSTOMIZE MENU ]' "${yellow}"
   inner_line
@@ -24,7 +24,7 @@ function customize_menu_ui_e5m() {
   bottom_line
 }
 
-function customize_menu_e5m() {
+customize_menu_e5m() {
   clear
   customize_menu_ui_e5m
   local customize_menu_opt

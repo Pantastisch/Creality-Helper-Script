@@ -2,7 +2,7 @@
 
 set -e
 
-function guppy_screen_message(){
+guppy_screen_message(){
   top_line
   title 'Guppy Screen' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function guppy_screen_message(){
   bottom_line
 }
 
-function install_guppy_screen(){
+install_guppy_screen(){
   guppy_screen_message
   local yn
   while true; do
@@ -194,7 +194,7 @@ function install_guppy_screen(){
   done
 }
 
-function remove_guppy_screen(){
+remove_guppy_screen(){
   guppy_screen_message
   local yn
   while true; do

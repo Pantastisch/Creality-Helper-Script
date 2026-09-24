@@ -2,7 +2,7 @@
 
 set -e
 
-function install_menu_ui_10se() {
+install_menu_ui_10se() {
   top_line
   title '[ INSTALL MENU ]' "${yellow}"
   inner_line
@@ -43,7 +43,7 @@ function install_menu_ui_10se() {
   bottom_line
 }
 
-function install_menu_10se() {
+install_menu_10se() {
   clear
   install_menu_ui_10se
   local install_menu_opt

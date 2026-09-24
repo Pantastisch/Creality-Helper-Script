@@ -2,7 +2,7 @@
 
 set -e
 
-function entware_message(){
+entware_message(){
   top_line
   title 'Entware' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function entware_message(){
   bottom_line
 }
 
-function install_entware(){
+install_entware(){
   entware_message
   local yn
   while true; do
@@ -38,7 +38,7 @@ function install_entware(){
   done
 }
 
-function remove_entware(){
+remove_entware(){
   entware_message
   local yn
   while true; do

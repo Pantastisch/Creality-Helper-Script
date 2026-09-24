@@ -2,7 +2,7 @@
 
 set -e
 
-function save_zoffset_macros_message(){
+save_zoffset_macros_message(){
   top_line
   title 'Save Z-Offset Macros' "${yellow}"
   inner_line
@@ -12,7 +12,7 @@ function save_zoffset_macros_message(){
   bottom_line
 }
 
-function install_save_zoffset_macros(){
+install_save_zoffset_macros(){
   save_zoffset_macros_message
   local yn
   while true; do
@@ -47,7 +47,7 @@ function install_save_zoffset_macros(){
   done
 }
 
-function remove_save_zoffset_macros(){
+remove_save_zoffset_macros(){
   save_zoffset_macros_message
   local yn
   while true; do

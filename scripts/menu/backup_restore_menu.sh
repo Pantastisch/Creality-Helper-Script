@@ -2,7 +2,7 @@
 
 set -e
 
-function backup_restore_menu_ui() {
+backup_restore_menu_ui() {
   top_line
   title '[ BACKUP & RESTORE MENU ]' "${yellow}"
   inner_line
@@ -22,7 +22,7 @@ function backup_restore_menu_ui() {
   bottom_line
 }
 
-function backup_restore_menu() {
+backup_restore_menu() {
   clear
   backup_restore_menu_ui
   local backup_restore_menu_opt

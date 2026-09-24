@@ -2,7 +2,7 @@
 
 set -e
 
-function mainsail_message(){
+mainsail_message(){
   top_line
   title 'Mainsail' "${yellow}"
   inner_line
@@ -15,7 +15,7 @@ function mainsail_message(){
   bottom_line
 }
 
-function install_mainsail(){
+install_mainsail(){
   mainsail_message
   local yn
   while true; do
@@ -58,7 +58,7 @@ function install_mainsail(){
   done
 }
 
-function remove_mainsail(){
+remove_mainsail(){
   mainsail_message
   local yn
   while true; do

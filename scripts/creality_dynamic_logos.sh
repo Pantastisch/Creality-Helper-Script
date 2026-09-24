@@ -2,7 +2,7 @@
 
 set -e
 
-function creality_dynamic_logos_message(){
+creality_dynamic_logos_message(){
   top_line
   title 'Creality Dynamic Logos for Fluidd' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function creality_dynamic_logos_message(){
   bottom_line
 }
 
-function install_creality_dynamic_logos(){
+install_creality_dynamic_logos(){
   creality_dynamic_logos_message
   local yn
   while true; do

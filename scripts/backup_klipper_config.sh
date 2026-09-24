@@ -2,7 +2,7 @@
 
 set -e
 
-function backup_klipper_config_files_message(){
+backup_klipper_config_files_message(){
   top_line
   title 'Backup Klipper configuration files' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function backup_klipper_config_files_message(){
   bottom_line
 }
 
-function restore_klipper_config_files_message(){
+restore_klipper_config_files_message(){
   top_line
   title 'Restore Klipper configuration files' "${yellow}"
   inner_line
@@ -24,7 +24,7 @@ function restore_klipper_config_files_message(){
   bottom_line
 }
 
-function backup_klipper_config_files(){
+backup_klipper_config_files(){
   backup_klipper_config_files_message
   local yn
   while true; do
@@ -49,7 +49,7 @@ function backup_klipper_config_files(){
   done
 }
 
-function restore_klipper_config_files(){
+restore_klipper_config_files(){
   restore_klipper_config_files_message
   local yn
   while true; do

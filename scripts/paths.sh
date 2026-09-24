@@ -2,7 +2,7 @@
 
 set -e
 
-function set_paths() {
+set_paths() {
 
   # Colors #
   white=`echo -en "\033[m"`
@@ -189,7 +189,7 @@ function set_paths() {
 
 }
 
-function set_permissions() {
+set_permissions() {
 
   chmod +x "$CURL" >/dev/null 2>&1 &
 

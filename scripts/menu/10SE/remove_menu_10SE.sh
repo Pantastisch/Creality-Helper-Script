@@ -2,7 +2,7 @@
 
 set -e
 
-function remove_menu_ui_10se() {
+remove_menu_ui_10se() {
   top_line
   title '[ REMOVE MENU ]' "${yellow}"
   inner_line
@@ -43,7 +43,7 @@ function remove_menu_ui_10se() {
   bottom_line
 }
 
-function remove_menu_10se() {
+remove_menu_10se() {
   clear
   remove_menu_ui_10se
   local remove_menu_opt

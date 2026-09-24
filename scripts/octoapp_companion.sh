@@ -2,7 +2,7 @@
 
 set -e
 
-function octoapp_companion_message(){
+octoapp_companion_message(){
   top_line
   title 'OctoApp Companion' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function octoapp_companion_message(){
   bottom_line
 }
 
-function install_octoapp_companion(){
+install_octoapp_companion(){
   octoapp_companion_message
   local yn
   while true; do
@@ -42,7 +42,7 @@ function install_octoapp_companion(){
   done
 }
 
-function remove_octoapp_companion(){
+remove_octoapp_companion(){
   octoapp_companion_message
   local yn
   while true; do

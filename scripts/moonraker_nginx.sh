@@ -2,7 +2,7 @@
 
 set -e
 
-function moonraker_nginx_message(){
+moonraker_nginx_message(){
   top_line
   title 'Moonraker and Nginx' "${yellow}"
   inner_line
@@ -16,7 +16,7 @@ function moonraker_nginx_message(){
   bottom_line
 }
 
-function moonraker_3v3_message(){
+moonraker_3v3_message(){
   top_line
   title 'Updated Moonraker' "${yellow}"
   inner_line
@@ -29,7 +29,7 @@ function moonraker_3v3_message(){
   bottom_line
 }
 
-function install_moonraker_nginx(){
+install_moonraker_nginx(){
   moonraker_nginx_message
   local yn
   while true; do
@@ -85,7 +85,7 @@ function install_moonraker_nginx(){
   done
 }
 
-function remove_moonraker_nginx(){
+remove_moonraker_nginx(){
   moonraker_nginx_message
   local yn
   while true; do
@@ -120,7 +120,7 @@ function remove_moonraker_nginx(){
   done
 }
 
-function install_moonraker_3v3(){
+install_moonraker_3v3(){
   moonraker_3v3_message
   local yn
   while true; do
@@ -185,7 +185,7 @@ function install_moonraker_3v3(){
   done
 }
 
-function remove_moonraker_3v3(){
+remove_moonraker_3v3(){
   moonraker_3v3_message
   local yn
   while true; do

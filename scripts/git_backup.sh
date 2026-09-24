@@ -2,7 +2,7 @@
 
 set -e
 
-function git_backup_message(){
+git_backup_message(){
   top_line
   title 'Git Backup' "${yellow}"
   inner_line
@@ -14,7 +14,7 @@ function git_backup_message(){
   bottom_line
 }
 
-function install_git_backup(){
+install_git_backup(){
   git_backup_message
   local yn
   while true; do
@@ -47,7 +47,7 @@ function install_git_backup(){
   done
 }
 
-function remove_git_backup(){
+remove_git_backup(){
   git_backup_message
   local yn
   while true; do

@@ -2,7 +2,7 @@
 
 set -e
 
-function backup_moonraker_database_message(){
+backup_moonraker_database_message(){
   top_line
   title 'Backup Moonraker database' "${yellow}"
   inner_line
@@ -13,7 +13,7 @@ function backup_moonraker_database_message(){
   bottom_line
 }
 
-function restore_moonraker_database_message(){
+restore_moonraker_database_message(){
   top_line
   title 'Restore Moonraker database' "${yellow}"
   inner_line
@@ -24,7 +24,7 @@ function restore_moonraker_database_message(){
   bottom_line
 }
 
-function backup_moonraker_database(){
+backup_moonraker_database(){
   backup_moonraker_database_message
   local yn
   while true; do
@@ -49,7 +49,7 @@ function backup_moonraker_database(){
   done
 }
 
-function restore_moonraker_database(){
+restore_moonraker_database(){
   restore_moonraker_database_message
   local yn
   while true; do
